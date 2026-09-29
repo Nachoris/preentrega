@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body {
+    font-family: "Unica One", sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to right, #4617c6, #ee51c5); 
+color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Audiowide", sans-serif;
+}
+
+header{
+    padding: 15px 0;
+    font-size: 20px;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;          /* 0 arriba/abajo, auto a los costados = centrado */
+    padding: 0 20px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;  /* separa logo y menu a los extremos */
+    align-items: center;             /* los alinea a la misma altura */
+    flex-wrap: wrap;                 /* en pantallas chicas bajan de linea */
+    gap: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;        /* saca los puntitos de la lista */
+}
+
+.negrita{
+    font-weight: bolder;
+    /* color: #ee51c5; */
+}
+
+.hero {
+    background-color: #17133b;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ff4dd3;
+    color: #17133b;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #332b7b;
+}
+
+.titulo-bajos {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.grilla-bajos {
+    display: flex;
+    flex-wrap: wrap;          /* si no entran, pasan a la fila de abajo */
+    gap: 25px;                /* separacion entre cards */
+    justify-content: center;
+}
+
+.card {
+    flex: 0 1 320px;
+    background: #332b7b;
+    border: 1px solid #332b7b;
+    border-radius: 8px;
+    overflow: hidden;         /* recorta la imagen a las esquinas redondeadas */
+    display: flex;
+    flex-direction: column;   /* imagen arriba, texto abajo (en columna) */
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgb(209, 80, 168);
+}
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;        /* la imagen se recorta sin deformarse */
+    display: block;
+}
+
+.card-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;                  /* ocupa el espacio sobrante: cards parejas */
+}
+
+.card button {
+    background:  #ff4dd3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card button:hover{
+    background: #17133b;
+}
