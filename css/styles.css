@@ -30,22 +30,22 @@ a {
 
 .contenedor {
     max-width: 1100px;
-    margin: 0 auto;          /* 0 arriba/abajo, auto a los costados = centrado */
+    margin: 0 auto;          
     padding: 0 20px;
 }
 
 .barra {
     display: flex;
-    justify-content: space-between;  /* separa logo y menu a los extremos */
-    align-items: center;             /* los alinea a la misma altura */
-    flex-wrap: wrap;                 /* en pantallas chicas bajan de linea */
+    justify-content: space-between;  
+    align-items: center;             
+    flex-wrap: wrap;                 
     gap: 15px;
 }
 
 .menu {
     display: flex;
     gap: 20px;
-    list-style: none;        /* saca los puntitos de la lista */
+    list-style: none;        
 }
 
 .menu a:hover {
@@ -54,7 +54,6 @@ a {
 
 .negrita{
     font-weight: bolder;
-    /* color: #ee51c5; */
 }
 
 .hero {
@@ -80,7 +79,18 @@ a {
 }
 
 .boton:active {
-    transform: scale(0.97);   /* efecto de "click" */
+    transform: scale(0.97);   
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
 }
 
 .titulo-bajos {
@@ -92,8 +102,8 @@ a {
 
 .grilla-bajos {
     display: flex;
-    flex-wrap: wrap;          /* si no entran, pasan a la fila de abajo */
-    gap: 25px;                /* separacion entre cards */
+    flex-wrap: wrap;          
+    gap: 25px;                
     justify-content: center;   
     margin-bottom: 60px;
 }
@@ -103,9 +113,9 @@ a {
     background: #332b7b;
     border: 1px solid #332b7b;
     border-radius: 8px;
-    overflow: hidden;         /* recorta la imagen a las esquinas redondeadas */
+    overflow: hidden;         
     display: flex;
-    flex-direction: column;   /* imagen arriba, texto abajo (en columna) */
+    flex-direction: column;   
 }
 
 .card:hover {
@@ -114,7 +124,7 @@ a {
 .card img {
     width: 100%;
     height: 240px;
-    object-fit: contain;        /* la imagen se recorta sin deformarse */
+    object-fit: contain;        
     display: block;
 }
 
@@ -123,7 +133,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex: 1;                  /* ocupa el espacio sobrante: cards parejas */
+    flex: 1;
 }
 
 .card button {
@@ -141,7 +151,7 @@ a {
 }
 
 .card button:active {
-    transform: scale(0.97);   /* efecto de "click" */
+    transform: scale(0.97);   
 }
 
 footer {
@@ -158,8 +168,8 @@ footer {
 }
 
 .columna {
-    flex: 1 1 250px;          /* crece, se achica, base 250px */
-}
+    flex: 1 1 250px; 
+}         
 
 .redes {
     display: flex;
@@ -212,7 +222,7 @@ footer {
 }
 
 .formulario textarea {
-    resize: vertical;      /* solo se agranda hacia abajo, no rompe el ancho */
+    resize: vertical;      
     min-height: 120px;
 }
 
@@ -235,7 +245,7 @@ footer {
 }
 
 .formulario button:active {
-    transform: scale(0.97);   /* efecto de "click" */
+    transform: scale(0.97);   
 }
 .formulario h2{
     text-align: center;
@@ -299,5 +309,4 @@ footer {
         gap: 10px;
     }
 
-}
-
+}   
