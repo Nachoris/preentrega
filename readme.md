@@ -1,0 +1,1 @@
+Sitio ficticio de ventas de bajos electrico para la pre-entrega del proyecto final del curso de front-end de Talento Tech.

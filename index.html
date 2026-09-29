@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRE ENTREGA</title>
+    <title>Nacho's bass store</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,9 @@
 
         <nav>
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
             <li><a href="#bajos">Bajos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
             <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
         </ul>
         </nav>    
@@ -92,15 +92,98 @@
                 <img src="imagenes/mm.png" alt="MUSIC MAN STINGRAY">
                 <div class="card-info">
                     <h3>MUSIC MAN STINGRAY</h3>
-                    <p>4 cuerdas activo, made in usa, ideal p-funk, excelnte estado</p>
+                    <p>4 cuerdas activo, made in usa, ideal p-funk, excelente estado</p>
                     <span class="negrita">$740.000</span>
                     <button><i class="fa-solid fa-cart-plus"></i> Agregar al carrito</button>
                 </div>
             </article>
         </div>
     </section>
+    <section id="contacto" class="contenedor formulario">
+        <h2>Contactate con nosotros \m/</h2>
+        <form action="https://formspree.io/f/maeydznd" method="POST"> 
+            <label>Nombre: 
+            <input type="text" name="nombre" required> 
+            </label><br>
+            
+            <label>Email: 
+            <input type="email" name="email" required> 
+            </label><br>
+            
+            <label>Mensaje: 
+            <textarea name="mensaje" required></textarea> 
+            </label><br>
+            
+            <button type="submit">Enviar</button> 
+        </form>
+    </section>
 
-    <script src="https://kit.fontawesome.com/132ee80f35.js" crossorigin="anonymous"></script>
+    <section id="reseñas" class="reseñas contenedor">
+
+        <h2>Lo que dicen nuestros clientes</h2>
+
+        <div class="grilla-reseñas">
+
+            <article class="reseña">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"El bajo llegó en tiempo y forma. El jazz bass es mi nuevo mejor amigo"</p>
+                <span>- Juan R. Riquelme</span>
+            </article>
+
+            <article class="reseña">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"La mejor atencion, Nacho sabe bocha del tema."</p>
+                <span>- Chuck Norris</span>
+            </article>
+
+            <article class="reseña">
+                <h3>⭐⭐⭐⭐</h3>
+                <p>"Muy conforme con la compra y con el contrato con el diablo"</p>
+                <span>- Messi. Si, el mismo</span>
+            </article>
+
+        </div>
+
+    </section>
+
+    
     </main>
+
+    <footer>
+        <div class="contenedor footer-columnas">
+
+            <div class="columna">
+            <h4>Nacho's Bass Store</h4>
+            <p>Tienda de bajos electricos nuevos y usados.
+            Pensado para la pre-entrega del proyecto final.</p>            
+            </div>
+
+            <div class="columna">
+                <ul>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#">Contratos con el diablo</a></li>
+                </ul>
+            </div>
+
+            <div class="columna">
+                <h4>Seguinos</h4>
+                <p>@nachosbassok</p>
+                <div class="redes">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/132ee80f35.js" crossorigin="anonymous"></script>
 </body>
 </html>

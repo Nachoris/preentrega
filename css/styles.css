@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Audiowide", sans-serif;
 }
 
@@ -48,6 +48,10 @@ a {
     list-style: none;        /* saca los puntitos de la lista */
 }
 
+.menu a:hover {
+    color: #ff4dd3;
+}
+
 .negrita{
     font-weight: bolder;
     /* color: #ee51c5; */
@@ -72,6 +76,11 @@ a {
 
 .boton:hover {
     background: #332b7b;
+    color: white;
+}
+
+.boton:active {
+    transform: scale(0.97);   /* efecto de "click" */
 }
 
 .titulo-bajos {
@@ -85,7 +94,8 @@ a {
     display: flex;
     flex-wrap: wrap;          /* si no entran, pasan a la fila de abajo */
     gap: 25px;                /* separacion entre cards */
-    justify-content: center;
+    justify-content: center;   
+    margin-bottom: 60px;
 }
 
 .card {
@@ -104,7 +114,7 @@ a {
 .card img {
     width: 100%;
     height: 240px;
-    object-fit: cover;        /* la imagen se recorta sin deformarse */
+    object-fit: contain;        /* la imagen se recorta sin deformarse */
     display: block;
 }
 
@@ -129,3 +139,165 @@ a {
 .card button:hover{
     background: #17133b;
 }
+
+.card button:active {
+    transform: scale(0.97);   /* efecto de "click" */
+}
+
+footer {
+    background: #17133b;
+    color: #DDD;
+    padding: 40px 0 20px;
+}
+
+.footer-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.columna {
+    flex: 1 1 250px;          /* crece, se achica, base 250px */
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #17133b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 60px;
+}
+
+.formulario label {
+    font-family: "Audiowide", sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.formulario input,
+.formulario textarea {
+    background: #332b7b;
+    color: white;
+    margin: 4px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 18px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: #a99fe0;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #ff4dd3;
+    box-shadow: 0 0 10px rgba(255, 77, 211, 0.5);
+}
+
+.formulario textarea {
+    resize: vertical;      /* solo se agranda hacia abajo, no rompe el ancho */
+    min-height: 120px;
+}
+
+.formulario button {
+    margin-top: 20px;
+    background: #ff4dd3;
+    color: #17133b;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.formulario button:hover {
+    background: #ee51c5;
+    color: white;
+}
+
+.formulario button:active {
+    transform: scale(0.97);   /* efecto de "click" */
+}
+.formulario h2{
+    text-align: center;
+}
+
+.reseñas {
+    margin-bottom: 60px;
+}
+
+.reseñas h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grilla-reseñas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.reseña {
+    background: #332b7b;
+    border: 1px solid #ff4dd3;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.reseña h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.reseña p {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.reseña span {
+    font-weight: bold;
+    color: #ff4dd3;
+}
+
+@media (max-width: 600px) {
+
+    .formulario {
+        padding: 20px;
+        margin: 0 15px 40px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        width: 100%;
+        margin: 4px 0;
+    }
+    .grilla-reseñas {
+        grid-template-columns: 1fr;
+    }
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
