@@ -1,4 +1,4 @@
-const productos = [
+const bajos = [
 {
     id:1,
     nombre:"FENDER JAZZ BASS '63",
