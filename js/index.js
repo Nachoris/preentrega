@@ -18,8 +18,8 @@ function mostrarBajos()
                     <span class="categoria">${bajo.categoria}</span>
                     <h3>${bajo.nombre}</h3>
                     <p>${bajo.descripcion}</p>
-                    <span class="negrita">$${bajo.precio}</span>
-                        <button onclick="AgregarProducto(${bajo.id})">
+                    <span class="negrita">${bajo.precio}</span>
+                        <button onclick="agregarProducto(${bajo.id})">
                         <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
                         </button>
                 </div>
@@ -32,8 +32,6 @@ function mostrarBajos()
 
 }
 
-function agregarProducto(id) {
-    console.log("Agregaste el producto", id);
-}
+
 
 mostrarBajos();
